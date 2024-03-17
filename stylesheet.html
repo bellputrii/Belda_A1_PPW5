@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sederhana</title>
+    <style>
+                @media only screen and (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+            nav ul li a {
+                display: block;
+                padding: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            td {
+                display: block;
+            }
+            td:nth-child(2) {
+                margin-top: 20px;
+            }
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url('https://i.pinimg.com/564x/71/0c/61/710c61bd9386db948829f488a1fa8902.jpg');
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0%;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+        h2 {
+            margin: 15px 0;
+            color: #333;
+        }
+        nav ul, footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li, footer ul li {
+            display:inline ;
+            margin-right: 10px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+        }
+        footer ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 10px;
+            background-color: #c79b9b;
+            border-radius: 10px;
+            border-style:inset ;
+            border-color:grey ;
+        }
+        nav ul li{
+            border-radius: 50%;
+            padding: 10px;
+            background-color: #E3E1D9;
+        }
+        nav ul li a:hover, footer ul li a:hover {
+            border-radius: 50%;
+            padding: 10px;
+            background-color: #C7C8CC;
+        }
+
+        header{
+            margin-top: 10px;
+            padding: 5px;
+            background-color: #E3E1D9;
+        }
+        section, article, aside {
+            margin-top: 20px;
+            text-align: left;
+            background-color:#E3E1D9;
+            padding: 20px;
+        }
+        footer{
+            padding: 5px;
+            color: #666;
+            background-color:#E3E1D9;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+        footer ul li a {
+            display: inline-block;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <header>
+                    <h2 id="C4">Belajar Membuat Layout Sederhana dengan HTML dan CSS</h2>
+                </header>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <nav>
+                    <ul>
+                        <li><a href="#C4">Main</a></li>
+                        <li><a href="#D4">Section</a></li>
+                        <li><a href="#E4">Article</a></li>
+                        <li><a href="#F4">Aside</a></li>
+                        <li><a href="#G4">About Me</a></li>
+                    </ul>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <article id="E4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, expedita et quam assumenda rem laudantium illum ullam, 
+                        blanditiis asperiores saepe commodi totam nulla hic eligendi odit dolores maxime ducimus facere.</p>
+                </article>
+                <aside id="F4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim at, ipsam quasi accusantium asperiores neque labore culpa earum debitis? 
+                        Temporibus facilis porro maiores incidunt repudiandae quo atque molestiae! Sapiente, nesciunt!</p>
+                </aside>
+                <section id="D4">
+                    <img src="https://i.pinimg.com/564x/4d/97/88/4d97882439276cec5a3acc00fc6f370e.jpg"
+                </section>
+                <table border="2"></table>
+            </td>
+            <td>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, expedita et quam assumenda rem laudantium illum ullam, 
+                        blanditiis asperiores saepe commodi totam nulla hic eligendi odit dolores maxime ducimus facere.</p>
+                </article>
+                <aside>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim at, ipsam quasi accusantium asperiores neque labore culpa earum debitis? 
+                        Temporibus facilis porro maiores incidunt repudiandae quo atque molestiae! Sapiente, nesciunt!</p>
+                </aside>
+                <section>
+                    <img src="https://i.pinimg.com/564x/4d/97/88/4d97882439276cec5a3acc00fc6f370e.jpg"
+                </section>
+                <table border="2"></table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <footer id="G4">
+                    <h3>Find me in social media:</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/xbive_" target="_blank" 
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png');"></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=6289673384911" target="_blank" 
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png');"></a></li>
+                        <li><a href="https://twitter.com/panggilajabell" target="_blank" 
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png');"></a></li>
+                    </ul>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
